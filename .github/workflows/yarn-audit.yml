@@ -7,11 +7,11 @@ on:
 jobs:
   npm_audit:
     runs-on: ubuntu-latest
-    name: NPM Audit
+    name: Yarn Audit
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: NPM install
-        run: npm ci
+      - name: Yarn install
+        run: yarn --frozen-lockfile
       - name: Audit
         run: yarn audit --groups dependencies\
