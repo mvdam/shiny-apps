@@ -1,1 +1,1 @@
-# shiny-apps
+# ShinyApps
